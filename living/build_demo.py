@@ -8,6 +8,17 @@ from observatory.ingest import ingest
 from .export import snapshot, ROOT
 
 
+def stable_numbers(value):
+    """Discard libm/SQLite machine-epsilon differences in public display assets."""
+    if isinstance(value, float):
+        return round(value, 6)
+    if isinstance(value, list):
+        return [stable_numbers(v) for v in value]
+    if isinstance(value, dict):
+        return {k: stable_numbers(v) for k, v in value.items()}
+    return value
+
+
 def build():
     with tempfile.TemporaryDirectory() as tmp:
         archive=Path(tmp)/'fictional.zip'
@@ -16,7 +27,7 @@ def build():
         ingest(archive,db)
         with sqlite3.connect(db) as con:
             con.execute("UPDATE meta SET value='SYNTHETIC · fictional demo' WHERE key='dataset'")
-        data=snapshot(db)
+        data=stable_numbers(snapshot(db))
     # Separate each session so assets are inspectable and small in Git reviews.
     dest=ROOT/'dist/data'
     dest.mkdir(exist_ok=True)
