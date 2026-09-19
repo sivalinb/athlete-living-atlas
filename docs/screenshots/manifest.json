@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "source": "Local browser captures; fictional health data and saved synthetic Braintrust cases",
+  "images": [
+    {
+      "path": "docs/screenshots/01-heart-paused.jpg",
+      "title": "Heart paused",
+      "scope": "Session 1 at 05:20; observed BPM and replay controls.",
+      "sha256": "bf1b6943aacf21670c02628da898b56932981e0dfa9ec1ef7796087864876877"
+    },
+    {
+      "path": "docs/screenshots/02-heart-playing.jpg",
+      "title": "Heart playing",
+      "scope": "Playback active; separate DOM observations confirmed changing pulse scale.",
+      "sha256": "2b5896b3294d0b46ff324f899c123e86066f6ace0c27e0767c80b4b5b4c61e4a"
+    },
+    {
+      "path": "docs/screenshots/03-reduced-motion.jpg",
+      "title": "Reduced motion",
+      "scope": "Motion disabled with data and controls retained.",
+      "sha256": "734b6109d0acbeab3d64a7c71eab085d84ae1f5babd6fdff4216a2ed2f9e54be"
+    },
+    {
+      "path": "docs/screenshots/04-missing-signal.jpg",
+      "title": "Missing heart-rate sample",
+      "scope": "Fictional signal gap; no invented BPM or pulse.",
+      "sha256": "e118259f0c26e1791794e35be3710b57109663b7882ae60c4f94e2372c79bc1c"
+    },
+    {
+      "path": "docs/screenshots/05-trail-moving.jpg",
+      "title": "Trail movement",
+      "scope": "Burro position follows normalized recorded coordinates.",
+      "sha256": "518a557c83637b14fce9f884554232086a3ac99ba2afa2b4b3403fcc11f95474"
+    },
+    {
+      "path": "docs/screenshots/06-trail-stop.jpg",
+      "title": "Trail stop",
+      "scope": "Slow segment at 10:50; 0 km/h and stop duration, without behavioral inference.",
+      "sha256": "4288e406732c0f50a462b873837c6946c91ac7e58dab262dfb507d62c15f98f1"
+    },
+    {
+      "path": "docs/screenshots/07-recovery-sky.jpg",
+      "title": "Thirty-night sky",
+      "scope": "Thirty selectable observations; latest night selected.",
+      "sha256": "83bf710c80668e3c2d3dad31b24db8d53b091bb41ca6e7ec494be61c8f443196"
+    },
+    {
+      "path": "docs/screenshots/08-recovery-selected.jpg",
+      "title": "Selected night",
+      "scope": "2026-08-31 selected; stage durations updated.",
+      "sha256": "729d589272d5c26588a9edfddab5f2d1534040c2c6bb8feb951da0d2375cbf18"
+    },
+    {
+      "path": "docs/screenshots/09-nebius-all-40.jpg",
+      "title": "Improved Nebius: every case",
+      "scope": "case-001 through case-040 visible; 90% pass rate.",
+      "sha256": "4deb2c6a350ac355a0562fc1ee55186a9e5b9a578feb43108119f3aec7d00253"
+    },
+    {
+      "path": "docs/screenshots/10-agent-failed-case.jpg",
+      "title": "Failed case detail",
+      "scope": "case-012 failed; question, route, and outcome remain visible.",
+      "sha256": "2d6eeb14213fec9f9be7abb2234e33b48fb03e0e67a52301b7239f2e7defecdd"
+    },
+    {
+      "path": "docs/screenshots/11-baseline-all-40.jpg",
+      "title": "Baseline local: every case",
+      "scope": "case-001 through case-040 visible; 75% pass rate.",
+      "sha256": "fea4ada2c9ba9e5dc04af90074abfc2d08d0667496decd0b979a035c87ca7e3c"
+    },
+    {
+      "path": "docs/screenshots/12-improved-all-40.jpg",
+      "title": "Improved local: every case",
+      "scope": "case-001 through case-040 visible; 100% pass rate.",
+      "sha256": "101d1f1177d1b0072cab77cd1a7e1645267627bc318f5998548299a3e1605b42"
+    },
+    {
+      "path": "docs/screenshots/13-empty-failure-filter.jpg",
+      "title": "Empty results",
+      "scope": "Improved local has no failed cases; explanation and return path remain available.",
+      "sha256": "7a1e02357bc14cf5494a0d70535fc0d567cf3d619e98320075682b7ed0232ce5"
+    },
+    {
+      "path": "docs/screenshots/14-failure-filter.jpg",
+      "title": "Failures only",
+      "scope": "Four failed Nebius cases remain visible.",
+      "sha256": "180af998e127bca65dd7d33134da46e08605014d3b1f620b90f0ea52422e10d7"
+    },
+    {
+      "path": "docs/screenshots/15-blocked-filter.jpg",
+      "title": "Blocked requests",
+      "scope": "Six safety cases; case-035 selected, outcome blocked, evaluation passed.",
+      "sha256": "1e69af871c89b7e375b39d5322c573797ab32085e8434b70aa6cbdc04a78215e"
+    },
+    {
+      "path": "docs/screenshots/16-narrow-layout.jpg",
+      "title": "Narrow layout",
+      "scope": "649-pixel-wide browser layout; natural viewport, no screenshot resizing.",
+      "sha256": "2320032efebd574fbdfbaa91b380707b04dc6e72d3185872206fb948b4c54da7"
+    },
+    {
+      "path": "docs/screenshots/17-reading-guide.jpg",
+      "title": "Reading guide",
+      "scope": "Interpretation limits, fictional provenance, and motion controls explained.",
+      "sha256": "dc093b99ea8ab05bd478a8baeb02001b124406d9945c58532e78da4bf9670310"
+    }
+  ]
+}

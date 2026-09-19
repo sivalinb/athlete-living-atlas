@@ -1,0 +1,25 @@
+# Optional LLaMA Factory execution path. Generate .local/training first.
+model_name_or_path: Qwen/Qwen3-1.7B-Base
+trust_remote_code: false
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 8
+lora_target: q_proj,v_proj
+dataset_dir: .local/training
+dataset: athlete_train
+eval_dataset: athlete_validation
+template: qwen3
+cutoff_len: 256
+output_dir: .local/llamafactory-router
+logging_steps: 5
+save_steps: 100
+plot_loss: true
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 0.0001
+num_train_epochs: 3
+lr_scheduler_type: cosine
+warmup_ratio: 0.1
+fp16: true
+report_to: none

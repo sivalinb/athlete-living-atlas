@@ -1,0 +1,868 @@
+{
+  "source": "assistant-authored method questions; expected source sections explicitly specified",
+  "cases": 15,
+  "variants": {
+    "section-bm25": {
+      "hit_at_3": 1.0,
+      "mrr_at_3": 0.9,
+      "rows": [
+        {
+          "question": "How is workout distance calculated?",
+          "expected_section": "training-volume",
+          "rank": 1,
+          "retrieved": [
+            "kb:training-volume:0",
+            "kb:route-coverage:0",
+            "kb:data-quality:0"
+          ]
+        },
+        {
+          "question": "What is the GPS stop threshold?",
+          "expected_section": "stops-and-pauses",
+          "rank": 2,
+          "retrieved": [
+            "kb:route-coverage:0",
+            "kb:stops-and-pauses:0",
+            "kb:import-and-refresh:0"
+          ]
+        },
+        {
+          "question": "How are missing GPS intervals handled?",
+          "expected_section": "stops-and-pauses",
+          "rank": 2,
+          "retrieved": [
+            "kb:route-coverage:0",
+            "kb:stops-and-pauses:0",
+            "kb:data-quality:0"
+          ]
+        },
+        {
+          "question": "What does route coverage measure?",
+          "expected_section": "route-coverage",
+          "rank": 1,
+          "retrieved": [
+            "kb:route-coverage:0",
+            "kb:data-quality:0"
+          ]
+        },
+        {
+          "question": "How do SDNN and RMSSD differ?",
+          "expected_section": "heart-rate-variability",
+          "rank": 1,
+          "retrieved": [
+            "kb:heart-rate-variability:0"
+          ]
+        },
+        {
+          "question": "How are overlapping sleep intervals handled?",
+          "expected_section": "sleep-measurement",
+          "rank": 1,
+          "retrieved": [
+            "kb:sleep-measurement:0",
+            "kb:route-coverage:0"
+          ]
+        },
+        {
+          "question": "What boundary assigns sleep to a night?",
+          "expected_section": "sleep-measurement",
+          "rank": 1,
+          "retrieved": [
+            "kb:sleep-measurement:0"
+          ]
+        },
+        {
+          "question": "Why can changing devices affect measurements?",
+          "expected_section": "device-changes",
+          "rank": 1,
+          "retrieved": [
+            "kb:device-changes:0",
+            "kb:data-quality:0",
+            "kb:heart-rate-variability:0"
+          ]
+        },
+        {
+          "question": "How do I import a fresh Apple Health export?",
+          "expected_section": "import-and-refresh",
+          "rank": 1,
+          "retrieved": [
+            "kb:import-and-refresh:0",
+            "kb:race-comparisons:0",
+            "kb:privacy-and-publication:0"
+          ]
+        },
+        {
+          "question": "Does importing append duplicate history?",
+          "expected_section": "import-and-refresh",
+          "rank": 1,
+          "retrieved": [
+            "kb:import-and-refresh:0"
+          ]
+        },
+        {
+          "question": "What should I inspect before comparing performance?",
+          "expected_section": "data-quality",
+          "rank": 1,
+          "retrieved": [
+            "kb:data-quality:0",
+            "kb:training-volume:0"
+          ]
+        },
+        {
+          "question": "What context matters when comparing races?",
+          "expected_section": "race-comparisons",
+          "rank": 2,
+          "retrieved": [
+            "kb:data-quality:0",
+            "kb:race-comparisons:0"
+          ]
+        },
+        {
+          "question": "Which screenshot is authorized for publication?",
+          "expected_section": "privacy-and-publication",
+          "rank": 1,
+          "retrieved": [
+            "kb:privacy-and-publication:0"
+          ]
+        },
+        {
+          "question": "Can this application prescribe treatment?",
+          "expected_section": "ai-boundaries",
+          "rank": 1,
+          "retrieved": [
+            "kb:ai-boundaries:0",
+            "kb:heart-rate-variability:0"
+          ]
+        },
+        {
+          "question": "How are Grafana definitions deployed?",
+          "expected_section": "deployment",
+          "rank": 1,
+          "retrieved": [
+            "kb:deployment:0",
+            "kb:import-and-refresh:0"
+          ]
+        }
+      ]
+    },
+    "section-vector": {
+      "hit_at_3": 0.8666666666666667,
+      "mrr_at_3": 0.8333333333333334,
+      "rows": [
+        {
+          "question": "How is workout distance calculated?",
+          "expected_section": "training-volume",
+          "rank": 1,
+          "retrieved": [
+            "kb:training-volume:0",
+            "kb:race-comparisons:0",
+            "kb:route-coverage:0"
+          ]
+        },
+        {
+          "question": "What is the GPS stop threshold?",
+          "expected_section": "stops-and-pauses",
+          "rank": 2,
+          "retrieved": [
+            "kb:route-coverage:0",
+            "kb:stops-and-pauses:0",
+            "kb:import-and-refresh:0"
+          ]
+        },
+        {
+          "question": "How are missing GPS intervals handled?",
+          "expected_section": "stops-and-pauses",
+          "rank": null,
+          "retrieved": [
+            "kb:route-coverage:0",
+            "kb:data-quality:0",
+            "kb:sleep-measurement:0"
+          ]
+        },
+        {
+          "question": "What does route coverage measure?",
+          "expected_section": "route-coverage",
+          "rank": 1,
+          "retrieved": [
+            "kb:route-coverage:0"
+          ]
+        },
+        {
+          "question": "How do SDNN and RMSSD differ?",
+          "expected_section": "heart-rate-variability",
+          "rank": 1,
+          "retrieved": [
+            "kb:heart-rate-variability:0"
+          ]
+        },
+        {
+          "question": "How are overlapping sleep intervals handled?",
+          "expected_section": "sleep-measurement",
+          "rank": 1,
+          "retrieved": [
+            "kb:sleep-measurement:0"
+          ]
+        },
+        {
+          "question": "What boundary assigns sleep to a night?",
+          "expected_section": "sleep-measurement",
+          "rank": 1,
+          "retrieved": [
+            "kb:sleep-measurement:0"
+          ]
+        },
+        {
+          "question": "Why can changing devices affect measurements?",
+          "expected_section": "device-changes",
+          "rank": 1,
+          "retrieved": [
+            "kb:device-changes:0"
+          ]
+        },
+        {
+          "question": "How do I import a fresh Apple Health export?",
+          "expected_section": "import-and-refresh",
+          "rank": 1,
+          "retrieved": [
+            "kb:import-and-refresh:0",
+            "kb:privacy-and-publication:0",
+            "kb:deployment:0"
+          ]
+        },
+        {
+          "question": "Does importing append duplicate history?",
+          "expected_section": "import-and-refresh",
+          "rank": 1,
+          "retrieved": [
+            "kb:import-and-refresh:0"
+          ]
+        },
+        {
+          "question": "What should I inspect before comparing performance?",
+          "expected_section": "data-quality",
+          "rank": 1,
+          "retrieved": [
+            "kb:data-quality:0",
+            "kb:training-volume:0"
+          ]
+        },
+        {
+          "question": "What context matters when comparing races?",
+          "expected_section": "race-comparisons",
+          "rank": null,
+          "retrieved": [
+            "kb:data-quality:0"
+          ]
+        },
+        {
+          "question": "Which screenshot is authorized for publication?",
+          "expected_section": "privacy-and-publication",
+          "rank": 1,
+          "retrieved": [
+            "kb:privacy-and-publication:0"
+          ]
+        },
+        {
+          "question": "Can this application prescribe treatment?",
+          "expected_section": "ai-boundaries",
+          "rank": 1,
+          "retrieved": [
+            "kb:ai-boundaries:0",
+            "kb:heart-rate-variability:0"
+          ]
+        },
+        {
+          "question": "How are Grafana definitions deployed?",
+          "expected_section": "deployment",
+          "rank": 1,
+          "retrieved": [
+            "kb:deployment:0",
+            "kb:import-and-refresh:0"
+          ]
+        }
+      ]
+    },
+    "section-hybrid": {
+      "hit_at_3": 1.0,
+      "mrr_at_3": 0.9,
+      "rows": [
+        {
+          "question": "How is workout distance calculated?",
+          "expected_section": "training-volume",
+          "rank": 1,
+          "retrieved": [
+            "kb:training-volume:0",
+            "kb:route-coverage:0",
+            "kb:data-quality:0"
+          ]
+        },
+        {
+          "question": "What is the GPS stop threshold?",
+          "expected_section": "stops-and-pauses",
+          "rank": 2,
+          "retrieved": [
+            "kb:route-coverage:0",
+            "kb:stops-and-pauses:0",
+            "kb:import-and-refresh:0"
+          ]
+        },
+        {
+          "question": "How are missing GPS intervals handled?",
+          "expected_section": "stops-and-pauses",
+          "rank": 2,
+          "retrieved": [
+            "kb:route-coverage:0",
+            "kb:stops-and-pauses:0",
+            "kb:data-quality:0"
+          ]
+        },
+        {
+          "question": "What does route coverage measure?",
+          "expected_section": "route-coverage",
+          "rank": 1,
+          "retrieved": [
+            "kb:route-coverage:0",
+            "kb:data-quality:0"
+          ]
+        },
+        {
+          "question": "How do SDNN and RMSSD differ?",
+          "expected_section": "heart-rate-variability",
+          "rank": 1,
+          "retrieved": [
+            "kb:heart-rate-variability:0"
+          ]
+        },
+        {
+          "question": "How are overlapping sleep intervals handled?",
+          "expected_section": "sleep-measurement",
+          "rank": 1,
+          "retrieved": [
+            "kb:sleep-measurement:0",
+            "kb:route-coverage:0"
+          ]
+        },
+        {
+          "question": "What boundary assigns sleep to a night?",
+          "expected_section": "sleep-measurement",
+          "rank": 1,
+          "retrieved": [
+            "kb:sleep-measurement:0"
+          ]
+        },
+        {
+          "question": "Why can changing devices affect measurements?",
+          "expected_section": "device-changes",
+          "rank": 1,
+          "retrieved": [
+            "kb:device-changes:0",
+            "kb:data-quality:0",
+            "kb:heart-rate-variability:0"
+          ]
+        },
+        {
+          "question": "How do I import a fresh Apple Health export?",
+          "expected_section": "import-and-refresh",
+          "rank": 1,
+          "retrieved": [
+            "kb:import-and-refresh:0",
+            "kb:race-comparisons:0",
+            "kb:privacy-and-publication:0"
+          ]
+        },
+        {
+          "question": "Does importing append duplicate history?",
+          "expected_section": "import-and-refresh",
+          "rank": 1,
+          "retrieved": [
+            "kb:import-and-refresh:0"
+          ]
+        },
+        {
+          "question": "What should I inspect before comparing performance?",
+          "expected_section": "data-quality",
+          "rank": 1,
+          "retrieved": [
+            "kb:data-quality:0",
+            "kb:training-volume:0"
+          ]
+        },
+        {
+          "question": "What context matters when comparing races?",
+          "expected_section": "race-comparisons",
+          "rank": 2,
+          "retrieved": [
+            "kb:data-quality:0",
+            "kb:race-comparisons:0"
+          ]
+        },
+        {
+          "question": "Which screenshot is authorized for publication?",
+          "expected_section": "privacy-and-publication",
+          "rank": 1,
+          "retrieved": [
+            "kb:privacy-and-publication:0"
+          ]
+        },
+        {
+          "question": "Can this application prescribe treatment?",
+          "expected_section": "ai-boundaries",
+          "rank": 1,
+          "retrieved": [
+            "kb:ai-boundaries:0",
+            "kb:heart-rate-variability:0"
+          ]
+        },
+        {
+          "question": "How are Grafana definitions deployed?",
+          "expected_section": "deployment",
+          "rank": 1,
+          "retrieved": [
+            "kb:deployment:0",
+            "kb:import-and-refresh:0"
+          ]
+        }
+      ]
+    },
+    "fixed-bm25": {
+      "hit_at_3": 0.9333333333333333,
+      "mrr_at_3": 0.8333333333333334,
+      "rows": [
+        {
+          "question": "How is workout distance calculated?",
+          "expected_section": "training-volume",
+          "rank": 1,
+          "retrieved": [
+            "kb:training-volume:0",
+            "kb:stops-and-pauses:1",
+            "kb:race-comparisons:0"
+          ]
+        },
+        {
+          "question": "What is the GPS stop threshold?",
+          "expected_section": "stops-and-pauses",
+          "rank": 2,
+          "retrieved": [
+            "kb:route-coverage:1",
+            "kb:stops-and-pauses:1",
+            "kb:stops-and-pauses:0"
+          ]
+        },
+        {
+          "question": "How are missing GPS intervals handled?",
+          "expected_section": "stops-and-pauses",
+          "rank": null,
+          "retrieved": [
+            "kb:route-coverage:0",
+            "kb:route-coverage:1",
+            "kb:data-quality:0"
+          ]
+        },
+        {
+          "question": "What does route coverage measure?",
+          "expected_section": "route-coverage",
+          "rank": 1,
+          "retrieved": [
+            "kb:route-coverage:2",
+            "kb:route-coverage:1",
+            "kb:route-coverage:0"
+          ]
+        },
+        {
+          "question": "How do SDNN and RMSSD differ?",
+          "expected_section": "heart-rate-variability",
+          "rank": 1,
+          "retrieved": [
+            "kb:heart-rate-variability:0"
+          ]
+        },
+        {
+          "question": "How are overlapping sleep intervals handled?",
+          "expected_section": "sleep-measurement",
+          "rank": 1,
+          "retrieved": [
+            "kb:sleep-measurement:0",
+            "kb:sleep-measurement:1",
+            "kb:route-coverage:0"
+          ]
+        },
+        {
+          "question": "What boundary assigns sleep to a night?",
+          "expected_section": "sleep-measurement",
+          "rank": 1,
+          "retrieved": [
+            "kb:sleep-measurement:0",
+            "kb:sleep-measurement:1"
+          ]
+        },
+        {
+          "question": "Why can changing devices affect measurements?",
+          "expected_section": "device-changes",
+          "rank": 2,
+          "retrieved": [
+            "kb:training-volume:1",
+            "kb:device-changes:0",
+            "kb:data-quality:0"
+          ]
+        },
+        {
+          "question": "How do I import a fresh Apple Health export?",
+          "expected_section": "import-and-refresh",
+          "rank": 1,
+          "retrieved": [
+            "kb:import-and-refresh:0",
+            "kb:import-and-refresh:1",
+            "kb:race-comparisons:1"
+          ]
+        },
+        {
+          "question": "Does importing append duplicate history?",
+          "expected_section": "import-and-refresh",
+          "rank": 1,
+          "retrieved": [
+            "kb:import-and-refresh:1"
+          ]
+        },
+        {
+          "question": "What should I inspect before comparing performance?",
+          "expected_section": "data-quality",
+          "rank": 1,
+          "retrieved": [
+            "kb:data-quality:1",
+            "kb:training-volume:1"
+          ]
+        },
+        {
+          "question": "What context matters when comparing races?",
+          "expected_section": "race-comparisons",
+          "rank": 2,
+          "retrieved": [
+            "kb:data-quality:1",
+            "kb:race-comparisons:0"
+          ]
+        },
+        {
+          "question": "Which screenshot is authorized for publication?",
+          "expected_section": "privacy-and-publication",
+          "rank": 1,
+          "retrieved": [
+            "kb:privacy-and-publication:0",
+            "kb:privacy-and-publication:1",
+            "kb:privacy-and-publication:2"
+          ]
+        },
+        {
+          "question": "Can this application prescribe treatment?",
+          "expected_section": "ai-boundaries",
+          "rank": 1,
+          "retrieved": [
+            "kb:ai-boundaries:0",
+            "kb:heart-rate-variability:1"
+          ]
+        },
+        {
+          "question": "How are Grafana definitions deployed?",
+          "expected_section": "deployment",
+          "rank": 1,
+          "retrieved": [
+            "kb:deployment:1",
+            "kb:import-and-refresh:1",
+            "kb:deployment:0"
+          ]
+        }
+      ]
+    },
+    "fixed-vector": {
+      "hit_at_3": 0.8666666666666667,
+      "mrr_at_3": 0.788888888888889,
+      "rows": [
+        {
+          "question": "How is workout distance calculated?",
+          "expected_section": "training-volume",
+          "rank": 1,
+          "retrieved": [
+            "kb:training-volume:0",
+            "kb:stops-and-pauses:1",
+            "kb:race-comparisons:0"
+          ]
+        },
+        {
+          "question": "What is the GPS stop threshold?",
+          "expected_section": "stops-and-pauses",
+          "rank": 3,
+          "retrieved": [
+            "kb:route-coverage:2",
+            "kb:route-coverage:1",
+            "kb:stops-and-pauses:1"
+          ]
+        },
+        {
+          "question": "How are missing GPS intervals handled?",
+          "expected_section": "stops-and-pauses",
+          "rank": null,
+          "retrieved": [
+            "kb:sleep-measurement:0",
+            "kb:route-coverage:1",
+            "kb:route-coverage:0"
+          ]
+        },
+        {
+          "question": "What does route coverage measure?",
+          "expected_section": "route-coverage",
+          "rank": 1,
+          "retrieved": [
+            "kb:route-coverage:2",
+            "kb:route-coverage:1",
+            "kb:route-coverage:0"
+          ]
+        },
+        {
+          "question": "How do SDNN and RMSSD differ?",
+          "expected_section": "heart-rate-variability",
+          "rank": 1,
+          "retrieved": [
+            "kb:heart-rate-variability:0"
+          ]
+        },
+        {
+          "question": "How are overlapping sleep intervals handled?",
+          "expected_section": "sleep-measurement",
+          "rank": 1,
+          "retrieved": [
+            "kb:sleep-measurement:0",
+            "kb:sleep-measurement:1",
+            "kb:route-coverage:0"
+          ]
+        },
+        {
+          "question": "What boundary assigns sleep to a night?",
+          "expected_section": "sleep-measurement",
+          "rank": 1,
+          "retrieved": [
+            "kb:sleep-measurement:0",
+            "kb:sleep-measurement:1"
+          ]
+        },
+        {
+          "question": "Why can changing devices affect measurements?",
+          "expected_section": "device-changes",
+          "rank": 2,
+          "retrieved": [
+            "kb:training-volume:1",
+            "kb:device-changes:0"
+          ]
+        },
+        {
+          "question": "How do I import a fresh Apple Health export?",
+          "expected_section": "import-and-refresh",
+          "rank": 1,
+          "retrieved": [
+            "kb:import-and-refresh:0",
+            "kb:import-and-refresh:1",
+            "kb:deployment:0"
+          ]
+        },
+        {
+          "question": "Does importing append duplicate history?",
+          "expected_section": "import-and-refresh",
+          "rank": 1,
+          "retrieved": [
+            "kb:import-and-refresh:1"
+          ]
+        },
+        {
+          "question": "What should I inspect before comparing performance?",
+          "expected_section": "data-quality",
+          "rank": 1,
+          "retrieved": [
+            "kb:data-quality:1"
+          ]
+        },
+        {
+          "question": "What context matters when comparing races?",
+          "expected_section": "race-comparisons",
+          "rank": null,
+          "retrieved": [
+            "kb:data-quality:1"
+          ]
+        },
+        {
+          "question": "Which screenshot is authorized for publication?",
+          "expected_section": "privacy-and-publication",
+          "rank": 1,
+          "retrieved": [
+            "kb:privacy-and-publication:0",
+            "kb:privacy-and-publication:2",
+            "kb:privacy-and-publication:1"
+          ]
+        },
+        {
+          "question": "Can this application prescribe treatment?",
+          "expected_section": "ai-boundaries",
+          "rank": 1,
+          "retrieved": [
+            "kb:ai-boundaries:0",
+            "kb:heart-rate-variability:1"
+          ]
+        },
+        {
+          "question": "How are Grafana definitions deployed?",
+          "expected_section": "deployment",
+          "rank": 1,
+          "retrieved": [
+            "kb:deployment:1",
+            "kb:import-and-refresh:1",
+            "kb:deployment:0"
+          ]
+        }
+      ]
+    },
+    "fixed-hybrid": {
+      "hit_at_3": 0.9333333333333333,
+      "mrr_at_3": 0.8333333333333334,
+      "rows": [
+        {
+          "question": "How is workout distance calculated?",
+          "expected_section": "training-volume",
+          "rank": 1,
+          "retrieved": [
+            "kb:training-volume:0",
+            "kb:stops-and-pauses:1",
+            "kb:race-comparisons:0"
+          ]
+        },
+        {
+          "question": "What is the GPS stop threshold?",
+          "expected_section": "stops-and-pauses",
+          "rank": 2,
+          "retrieved": [
+            "kb:route-coverage:1",
+            "kb:stops-and-pauses:1",
+            "kb:stops-and-pauses:0"
+          ]
+        },
+        {
+          "question": "How are missing GPS intervals handled?",
+          "expected_section": "stops-and-pauses",
+          "rank": null,
+          "retrieved": [
+            "kb:route-coverage:0",
+            "kb:route-coverage:1",
+            "kb:data-quality:0"
+          ]
+        },
+        {
+          "question": "What does route coverage measure?",
+          "expected_section": "route-coverage",
+          "rank": 1,
+          "retrieved": [
+            "kb:route-coverage:2",
+            "kb:route-coverage:1",
+            "kb:route-coverage:0"
+          ]
+        },
+        {
+          "question": "How do SDNN and RMSSD differ?",
+          "expected_section": "heart-rate-variability",
+          "rank": 1,
+          "retrieved": [
+            "kb:heart-rate-variability:0"
+          ]
+        },
+        {
+          "question": "How are overlapping sleep intervals handled?",
+          "expected_section": "sleep-measurement",
+          "rank": 1,
+          "retrieved": [
+            "kb:sleep-measurement:0",
+            "kb:sleep-measurement:1",
+            "kb:route-coverage:0"
+          ]
+        },
+        {
+          "question": "What boundary assigns sleep to a night?",
+          "expected_section": "sleep-measurement",
+          "rank": 1,
+          "retrieved": [
+            "kb:sleep-measurement:0",
+            "kb:sleep-measurement:1"
+          ]
+        },
+        {
+          "question": "Why can changing devices affect measurements?",
+          "expected_section": "device-changes",
+          "rank": 2,
+          "retrieved": [
+            "kb:training-volume:1",
+            "kb:device-changes:0",
+            "kb:data-quality:0"
+          ]
+        },
+        {
+          "question": "How do I import a fresh Apple Health export?",
+          "expected_section": "import-and-refresh",
+          "rank": 1,
+          "retrieved": [
+            "kb:import-and-refresh:0",
+            "kb:import-and-refresh:1",
+            "kb:race-comparisons:1"
+          ]
+        },
+        {
+          "question": "Does importing append duplicate history?",
+          "expected_section": "import-and-refresh",
+          "rank": 1,
+          "retrieved": [
+            "kb:import-and-refresh:1"
+          ]
+        },
+        {
+          "question": "What should I inspect before comparing performance?",
+          "expected_section": "data-quality",
+          "rank": 1,
+          "retrieved": [
+            "kb:data-quality:1",
+            "kb:training-volume:1"
+          ]
+        },
+        {
+          "question": "What context matters when comparing races?",
+          "expected_section": "race-comparisons",
+          "rank": 2,
+          "retrieved": [
+            "kb:data-quality:1",
+            "kb:race-comparisons:0"
+          ]
+        },
+        {
+          "question": "Which screenshot is authorized for publication?",
+          "expected_section": "privacy-and-publication",
+          "rank": 1,
+          "retrieved": [
+            "kb:privacy-and-publication:0",
+            "kb:privacy-and-publication:1",
+            "kb:privacy-and-publication:2"
+          ]
+        },
+        {
+          "question": "Can this application prescribe treatment?",
+          "expected_section": "ai-boundaries",
+          "rank": 1,
+          "retrieved": [
+            "kb:ai-boundaries:0",
+            "kb:heart-rate-variability:1"
+          ]
+        },
+        {
+          "question": "How are Grafana definitions deployed?",
+          "expected_section": "deployment",
+          "rank": 1,
+          "retrieved": [
+            "kb:deployment:1",
+            "kb:import-and-refresh:1",
+            "kb:deployment:0"
+          ]
+        }
+      ]
+    }
+  }
+}

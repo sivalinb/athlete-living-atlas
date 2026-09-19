@@ -1,0 +1,4 @@
+# Optional experiments. The mandatory application policy has no extra dependencies.
+guardrails-ai>=0.6,<1
+nemoguardrails>=0.15,<1
+langchain-openai>=0.3,<2

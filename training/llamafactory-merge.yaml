@@ -1,0 +1,8 @@
+model_name_or_path: Qwen/Qwen3-1.7B-Base
+adapter_name_or_path: .local/llamafactory-router
+template: qwen3
+finetuning_type: lora
+export_dir: .local/llamafactory-merged
+export_size: 2
+export_device: cpu
+export_legacy_format: false

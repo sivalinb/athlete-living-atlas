@@ -1,0 +1,40 @@
+name: Living Atlas verification
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check animation logic and measurement boundaries
+        run: |
+          npm run check
+          npm test
+          python -m unittest discover -s tests -v
+      - name: Rebuild fictional visual data and reject drift
+        run: |
+          python -m living.build_demo
+          git diff --exit-code -- dist/demo.json dist/data dist/braintrust.json
+      - name: Evaluate the inherited investigator
+        run: |
+          python -m observatory.demo --db .local/health.sqlite
+          python -m observatory.investigator.evaluate --db .local/health.sqlite --out .local/evaluation.json --strict
+      - name: Verify public bundle and screenshot evidence
+        run: python -m living.verify
+      - uses: actions/upload-artifact@v4
+        with:
+          name: living-atlas-${{ github.sha }}
+          path: dist/
+          retention-days: 14

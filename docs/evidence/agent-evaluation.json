@@ -1,0 +1,5532 @@
+{
+  "dataset_sha256": "eca68c89ebc1f82cb4a391cc3e797e1515d63ec7f5acc808f07f12b38b5c48cc",
+  "dataset_label": "assistant-authored synthetic; user review pending",
+  "case_count": 40,
+  "model_calls": 0,
+  "api_cost_usd": 0,
+  "variants": {
+    "baseline": {
+      "pass_rate": 0.75,
+      "route_accuracy": 0.75,
+      "status_accuracy": 0.75,
+      "evidence_fidelity": 1.0,
+      "p50_latency_ms": 0.08449999999999999,
+      "p95_latency_ms": 5.405,
+      "mean_tool_calls": 0.65,
+      "failures": [
+        "case-006",
+        "case-011",
+        "case-012",
+        "case-014",
+        "case-017",
+        "case-018",
+        "case-021",
+        "case-023",
+        "case-033",
+        "case-034"
+      ],
+      "cases": [
+        {
+          "case_id": "case-001",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.623,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.15
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-002",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.067,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.03
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-003",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.049,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.026
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-004",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.046,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.024
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-005",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.042,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.023
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-006",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "review",
+          "expected_status": "answered",
+          "status": "review",
+          "route_correct": false,
+          "status_correct": false,
+          "evidence_fidelity": true,
+          "passed": false,
+          "latency_ms": 0.36,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.341
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-007",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.137,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.115
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-008",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.107,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.087
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-009",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.107,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.085
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-010",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.102,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.084
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-011",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "review",
+          "expected_status": "answered",
+          "status": "review",
+          "route_correct": false,
+          "status_correct": false,
+          "evidence_fidelity": true,
+          "passed": false,
+          "latency_ms": 0.064,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-012",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "review",
+          "expected_status": "answered",
+          "status": "review",
+          "route_correct": false,
+          "status_correct": false,
+          "evidence_fidelity": true,
+          "passed": false,
+          "latency_ms": 0.016,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-013",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 6.328,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 6.269
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-014",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "review",
+          "expected_status": "answered",
+          "status": "review",
+          "route_correct": false,
+          "status_correct": false,
+          "evidence_fidelity": true,
+          "passed": false,
+          "latency_ms": 0.057,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-015",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 6.125,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 6.082
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-016",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 5.405,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.359
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-017",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "review",
+          "expected_status": "answered",
+          "status": "review",
+          "route_correct": false,
+          "status_correct": false,
+          "evidence_fidelity": true,
+          "passed": false,
+          "latency_ms": 0.022,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-018",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "review",
+          "expected_status": "answered",
+          "status": "review",
+          "route_correct": false,
+          "status_correct": false,
+          "evidence_fidelity": true,
+          "passed": false,
+          "latency_ms": 0.016,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-019",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.368,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.352
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-020",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.331,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.312
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-021",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "review",
+          "expected_status": "answered",
+          "status": "review",
+          "route_correct": false,
+          "status_correct": false,
+          "evidence_fidelity": true,
+          "passed": false,
+          "latency_ms": 0.294,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.278
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-022",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.369,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.35
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-023",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "review",
+          "expected_status": "answered",
+          "status": "review",
+          "route_correct": false,
+          "status_correct": false,
+          "evidence_fidelity": true,
+          "passed": false,
+          "latency_ms": 0.358,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.339
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-024",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.282,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.266
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-025",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.017,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-026",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.016,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-027",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.015,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-028",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.285,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.273
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-029",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.351,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.335
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-030",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.46,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.434
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-031",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.623,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.563
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-032",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.436,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.399
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-033",
+          "scenario": "known_failure",
+          "expected_route": "training_summary",
+          "predicted_route": "review",
+          "expected_status": "answered",
+          "status": "review",
+          "route_correct": false,
+          "status_correct": false,
+          "evidence_fidelity": true,
+          "passed": false,
+          "latency_ms": 0.044,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "failed",
+              "latency_ms": 0.005
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-034",
+          "scenario": "known_failure",
+          "expected_route": "latest_workout",
+          "predicted_route": "review",
+          "expected_status": "answered",
+          "status": "review",
+          "route_correct": false,
+          "status_correct": false,
+          "evidence_fidelity": true,
+          "passed": false,
+          "latency_ms": 0.028,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "failed",
+              "latency_ms": 0.002
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-035",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.015,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-036",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.011,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-037",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.012,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-038",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.008,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-039",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.011,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-040",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.015,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        }
+      ]
+    },
+    "improved": {
+      "pass_rate": 1.0,
+      "route_accuracy": 1.0,
+      "status_accuracy": 1.0,
+      "evidence_fidelity": 1.0,
+      "p50_latency_ms": 0.1195,
+      "p95_latency_ms": 5.946,
+      "mean_tool_calls": 0.8,
+      "failures": [],
+      "cases": [
+        {
+          "case_id": "case-001",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.296,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.147
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-002",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.054,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.026
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-003",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.043,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.024
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-004",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.042,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.023
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-005",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.041,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.023
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-006",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.041,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.022
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-007",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.123,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.104
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-008",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.105,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.086
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-009",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.107,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.085
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-010",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.103,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.084
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-011",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.145,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.086
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-012",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.105,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.084
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-013",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 5.883,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.822
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-014",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 5.821,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.591
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-015",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 5.946,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.864
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-016",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 5.964,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.848
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-017",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 5.543,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.492
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-018",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 5.948,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.914
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-019",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.399,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.37
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-020",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.341,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.313
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-021",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.297,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.279
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-022",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.397,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.375
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-023",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.362,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.339
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-024",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.284,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.268
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-025",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.015,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-026",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.013,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-027",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.118,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-028",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.014,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-029",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.385,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.368
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-030",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.362,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.34
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-031",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.427,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.403
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-032",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.324,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.3
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-033",
+          "scenario": "known_failure",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.079,
+          "tool_calls": 2,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "retry",
+              "latency_ms": 0.002
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.045
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-034",
+          "scenario": "known_failure",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.121,
+          "tool_calls": 2,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "retry",
+              "latency_ms": 0.001
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.092
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-035",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.014,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-036",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.01,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-037",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.012,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-038",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.008,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-039",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.01,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-040",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.012,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        }
+      ]
+    },
+    "no_expansion": {
+      "pass_rate": 1.0,
+      "route_accuracy": 1.0,
+      "status_accuracy": 1.0,
+      "evidence_fidelity": 1.0,
+      "p50_latency_ms": 0.1215,
+      "p95_latency_ms": 6.183,
+      "mean_tool_calls": 0.8,
+      "failures": [],
+      "cases": [
+        {
+          "case_id": "case-001",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.257,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.198
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-002",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.064,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.031
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-003",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.049,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.025
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-004",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.044,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.024
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-005",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.043,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.024
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-006",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.042,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.023
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-007",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.147,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.128
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-008",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.106,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.086
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-009",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.107,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.085
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-010",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.113,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.093
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-011",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.13,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.107
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-012",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.111,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.09
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-013",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 6.183,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 6.143
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-014",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 6.599,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 6.523
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-015",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 6.059,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.978
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-016",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 5.613,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.537
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-017",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 5.771,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.714
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-018",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 6.414,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 6.377
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-019",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.382,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.358
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-020",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.336,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.307
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-021",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.289,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.272
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-022",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.36,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.338
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-023",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.36,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.338
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-024",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.28,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.265
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-025",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.015,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-026",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.013,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-027",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.02,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-028",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.013,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-029",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.354,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.338
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-030",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.353,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.335
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-031",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.427,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.403
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-032",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.322,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.298
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-033",
+          "scenario": "known_failure",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.088,
+          "tool_calls": 2,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "retry",
+              "latency_ms": 0.001
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.056
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-034",
+          "scenario": "known_failure",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.132,
+          "tool_calls": 2,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "retry",
+              "latency_ms": 0.001
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.103
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-035",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.014,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-036",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.01,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-037",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.012,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-038",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.007,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-039",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.01,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-040",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.012,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        }
+      ]
+    },
+    "no_retry": {
+      "pass_rate": 0.95,
+      "route_accuracy": 0.95,
+      "status_accuracy": 0.95,
+      "evidence_fidelity": 1.0,
+      "p50_latency_ms": 0.1125,
+      "p95_latency_ms": 5.915,
+      "mean_tool_calls": 0.75,
+      "failures": [
+        "case-033",
+        "case-034"
+      ],
+      "cases": [
+        {
+          "case_id": "case-001",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.291,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.225
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-002",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.062,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.029
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-003",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.047,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.025
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-004",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.048,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.025
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-005",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.044,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.024
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-006",
+          "scenario": "happy",
+          "expected_route": "training_summary",
+          "predicted_route": "training_summary",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.047,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "ok",
+              "latency_ms": 0.024
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-007",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.139,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.118
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-008",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.114,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.093
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-009",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.111,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.088
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-010",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.107,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.087
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-011",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.11,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.086
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-012",
+          "scenario": "happy",
+          "expected_route": "latest_workout",
+          "predicted_route": "latest_workout",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.123,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "ok",
+              "latency_ms": 0.1
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-013",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 6.384,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 6.356
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-014",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 5.785,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.742
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-015",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 5.522,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.465
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-016",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 6.524,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 6.435
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-017",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 5.905,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.826
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-018",
+          "scenario": "happy",
+          "expected_route": "signal_inventory",
+          "predicted_route": "signal_inventory",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 5.915,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "signal_inventory",
+              "status": "ok",
+              "latency_ms": 5.835
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-019",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.47,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.416
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-020",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.371,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.341
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-021",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.305,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.286
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-022",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.412,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.389
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-023",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.42,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.396
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-024",
+          "scenario": "happy",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.306,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.289
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-025",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.017,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-026",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.014,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-027",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.02,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-028",
+          "scenario": "edge",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "review",
+          "status": "review",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.012,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-029",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.385,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.369
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-030",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.378,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.356
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-031",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.45,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.425
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-032",
+          "scenario": "edge",
+          "expected_route": "knowledge",
+          "predicted_route": "knowledge",
+          "expected_status": "answered",
+          "status": "answered",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.335,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "retrieve",
+              "status": "ok",
+              "latency_ms": 0.31
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-033",
+          "scenario": "known_failure",
+          "expected_route": "training_summary",
+          "predicted_route": "review",
+          "expected_status": "answered",
+          "status": "review",
+          "route_correct": false,
+          "status_correct": false,
+          "evidence_fidelity": true,
+          "passed": false,
+          "latency_ms": 0.03,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "training_summary",
+              "status": "failed",
+              "latency_ms": 0.003
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-034",
+          "scenario": "known_failure",
+          "expected_route": "latest_workout",
+          "predicted_route": "review",
+          "expected_status": "answered",
+          "status": "review",
+          "route_correct": false,
+          "status_correct": false,
+          "evidence_fidelity": true,
+          "passed": false,
+          "latency_ms": 0.027,
+          "tool_calls": 1,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "plan",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "latest_workout",
+              "status": "failed",
+              "latency_ms": 0.001
+            },
+            {
+              "name": "verify",
+              "status": "ok",
+              "latency_ms": 0
+            },
+            {
+              "name": "human_review",
+              "status": "required",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-035",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.013,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-036",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.01,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-037",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.012,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-038",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.008,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-039",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.01,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        },
+        {
+          "case_id": "case-040",
+          "scenario": "adversarial",
+          "expected_route": "review",
+          "predicted_route": "review",
+          "expected_status": "blocked",
+          "status": "blocked",
+          "route_correct": true,
+          "status_correct": true,
+          "evidence_fidelity": true,
+          "passed": true,
+          "latency_ms": 0.012,
+          "tool_calls": 0,
+          "steps": [
+            {
+              "name": "input_policy",
+              "status": "blocked",
+              "latency_ms": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "delta_pass_rate": 0.25
+}

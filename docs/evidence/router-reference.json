@@ -1,0 +1,95 @@
+{
+  "method": "multinomial naive Bayes lexical baseline; not LoRA or LLM fine-tuning",
+  "validation_count": 40,
+  "accuracy": 0.25,
+  "macro_f1": 0.1980952380952381,
+  "per_class": {
+    "training_summary": {
+      "precision": 0.3076923076923077,
+      "recall": 0.5,
+      "f1": 0.380952380952381,
+      "support": 8
+    },
+    "latest_workout": {
+      "precision": 0.38461538461538464,
+      "recall": 0.625,
+      "f1": 0.4761904761904762,
+      "support": 8
+    },
+    "signal_inventory": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0,
+      "support": 8
+    },
+    "knowledge": {
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "support": 8
+    },
+    "review": {
+      "precision": 0.14285714285714285,
+      "recall": 0.125,
+      "f1": 0.13333333333333333,
+      "support": 8
+    }
+  },
+  "row_labels": [
+    "training_summary",
+    "latest_workout",
+    "signal_inventory",
+    "knowledge",
+    "review"
+  ],
+  "column_labels": [
+    "training_summary",
+    "latest_workout",
+    "signal_inventory",
+    "knowledge",
+    "review",
+    "invalid"
+  ],
+  "confusion_matrix": [
+    [
+      4,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      5,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      4,
+      0,
+      4,
+      0
+    ],
+    [
+      3,
+      4,
+      0,
+      0,
+      1,
+      0
+    ]
+  ]
+}

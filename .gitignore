@@ -1,0 +1,13 @@
+.local/
+.sites-runtime/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+*.sqlite*
+*.db*
+*.zip
+*.gpx
+*.xml
+node_modules/

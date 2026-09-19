@@ -1,0 +1,23 @@
+Generation mode: built-in image_gen. Exactly one generation per asset, no retries.
+
+HEART
+Use case: stylized-concept
+Asset type: original raster object asset for athlete telemetry web app, square 1024 x 1024.
+Primary request: isolated stylized anatomically recognizable human heart, sculptural rich ruby and burgundy tissue with subtle warm cream specular light, ascending arteries and blue vein accents.
+Scene/backdrop: completely solid flat near-black #101016 background edge to edge.
+Composition/framing: front three-quarter view, centered entire heart and arteries visible with ample margin around entire object; object about 65% of frame height.
+Style/medium: high-end scientific museum installation, elegant sculptural 3D render, polished yet organic. Illustrative anatomy, not a medical accuracy claim.
+Lighting/mood: subtle warm cream specular studio lighting, dramatic but clearly legible.
+Constraints: no text, no ECG, no UI, no labels, no props, no watermark, no floor or display stand. Make exactly one image.
+
+BURRO
+Use case: stylized-concept
+Asset type: original raster object asset for athlete telemetry web app, square 1024 x 1024.
+Primary request: elegant friendly burro (donkey) side profile facing right, full body including all ears and feet visible.
+Scene/backdrop: completely solid flat near-black #101016 background edge to edge.
+Subject: dark charcoal brown burro with warm cream muzzle and thin ivory highlights.
+Style/medium: minimal sculptural 3D museum model, refined organic form, friendly expression.
+Composition/framing: centered isolated full animal with ample margin around all ears, tail and feet; roughly 70% of image width.
+Lighting/mood: restrained warm cream studio highlights shaping the dark brown body, elegant museum installation.
+Constraints: no text, no watermark, no saddle, no rider, no UI, no pedestal, no environment. Make exactly one image.
+

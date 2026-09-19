@@ -1,0 +1,4 @@
+# Optional framework and trace adapters; core investigator remains stdlib-only.
+langgraph>=1.0,<2
+langsmith>=0.4,<1
+braintrust==0.39.0
